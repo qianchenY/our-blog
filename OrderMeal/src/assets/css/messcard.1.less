@@ -1,0 +1,207 @@
+.messcard{
+    position: fixed;
+    top: 87px;
+    width: 296px;
+    .messcard-top{
+        position: relative;
+        width: 100%;
+        background: #fff;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        overflow: hidden;
+        .messcard-top-bg{
+            width: 100%;
+            height: 100px;
+            background: url(../../../static/images/flyme.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .messcard-top-avatar{
+            position: absolute;
+            left: 50%;
+            top: 45px;
+            display: inline-block;
+            width: 76px;
+            height: 76px;
+            line-height: 74px;
+            margin-left: -38px;
+            // margin-top: -60px;
+            text-align: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            vertical-align: middle;
+            cursor: pointer;
+            overflow: hidden;
+            &>.avatar{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                vertical-align: middle;
+            }
+        }
+        .messcard-top-ms{
+            height: 100px;
+            text-align: center;
+            .messframe{
+                display: inline-block;
+                font-size: 17px;
+                font-weight: bold;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-top: 23px;
+                text-align: center;
+            }
+            .messcard-mode{
+                width: 100%;
+                margin-top: 8px;
+                box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                &>li{
+                    width: 33.333%;
+                    float: left;
+                    box-sizing:border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing:border-box;
+                    text-align: center;
+                    margin-bottom: 8px;
+                    &:nth-child(2){
+                        position: relative;
+                    }
+                    &:nth-child(2)::before {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        bottom:0;
+                        content: "";
+                        width: 1px;
+                        height:42px;
+                        margin: -21px 0 0 0;
+                        z-index:50;
+                        background: #d7d7d7;
+                        transform: scaleX(0.5);
+                        -webkit-transform: scaleX(0.5);
+                        -moz-transform: scaleX(0.5);
+                        -ms-transform: scaleX(0.5);
+                        -o-transform: scaleX(0.5);
+                    }
+                    &:nth-child(2)::after{
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        bottom:0;
+                        content: "";
+                        width: 1px;
+                        height:42px;
+                        margin: -21px 0 0 0;
+                        z-index:50;
+                        background: #d7d7d7;
+                        transform: scaleX(0.5);
+                        -webkit-transform: scaleX(0.5);
+                        -moz-transform: scaleX(0.5);
+                        -ms-transform: scaleX(0.5);
+                        -o-transform: scaleX(0.5);
+                    }
+                    &>.messcard-mode-con{
+                        display: inline-block;
+                        width: 100%;
+                        &>p{
+                            padding: 5px 0;
+                        }
+                        &>p:nth-child(1){
+                            font-size: 20px;
+                            color: #333;
+                        }
+                        &>p:nth-child(2){
+                            font-size: 14px;
+                            color: #808080;
+                        }
+                        &:hover p{
+                            color: #0F88EB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .messcard-mid{
+        margin-top: 13px;
+        background: #fff;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        overflow: hidden;
+        &>.messcard-mid-list{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            &>li{
+                float: left;
+                width: 33.333%;
+                box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                &>.messcard-handle{
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    &>img{
+                        width: 22px;  
+                    }
+                    &>p{
+                        font-size: 13px;
+                        color: #8590a6;
+                        padding-top: 9px;
+                    }
+                }
+                &:nth-child(1):hover>.messcard-handle>p{
+                    color: #337AB7;
+                }
+                &:nth-child(2):hover>.messcard-handle>p{
+                    color: #FFCF00;
+                }
+                &:nth-child(3):hover>.messcard-handle>p{
+                    color: #5478F0;
+                }
+            }
+        }
+    }
+    .messcard-foot{
+        margin-top: 13px;
+        padding: 10px 0;
+        background: #fff;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        overflow: hidden;
+        &>ul>li{
+            padding: 10px 0 10px 33px;
+            &:hover{
+                background: #F4F8FB;
+            }
+            &>.messcard-point{
+                display: inline-block;
+                width: 100%;
+                height: 25px;
+                text-align: left;
+                line-height: 25px;
+                &>img{
+                    width: 16px;
+                    vertical-align: middle;
+                }
+                &>span{
+                    font-size: 16px;
+                    color: #9FADC7;
+                    padding-left: 4px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
